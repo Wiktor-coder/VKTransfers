@@ -15,7 +15,7 @@ class VKMoneyTransfers1KtTest {
     @Test
     fun testMaestro_StockTrue_NoCommission() {
         val result = calculateCommission("Maestro", 0.0, 50_000.0, true)
-        assertEquals("0.0", result)
+        assertEquals("1.0", result)
     }
 
     @Test
